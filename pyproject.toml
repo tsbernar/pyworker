@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pyworker"
+version = "0.1.0"
+description = ""
+authors = ["Trevor Bernard <trevor.s.bernard@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+zmq = "^0.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+black = "^23.3.0"
+mypy = "^1.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+poc = "pyworker.master:run"
